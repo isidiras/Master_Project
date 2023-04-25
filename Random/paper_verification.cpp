@@ -131,7 +131,7 @@ TTree* read_tree(TString input_file){
 	TTree *tree = (TTree*)input->Get("tree");
 	return tree;
 }
-	//Here we define the variables for each particle
+
 void correlation_tree(Int_t id_trigger,Int_t id_associate,TString filename, const char* title){
 //This function does exacly what the above one does but it reads the TTree created specific
 //for this analysis.
