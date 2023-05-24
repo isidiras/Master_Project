@@ -3,7 +3,8 @@
 //creates a D+D+ correlation histogram so we can compare it with histogram created by the trees to check if everything works
 //alright. With this simulation script one can produce data to be analyzed by a script such the one I have posted at
 //Scripts/status_analysis_v2.cpp. Furthermore, multiplicity is stored at event level so the data provided can be studied 
-//as function of multiplicity as well.
+//as function of multiplicity as well.Finally the PYTHIA code of the production mechanism is also stored at event level
+//giving the chance for production mechanism studies.
 
 //C++ libraries we are using
 #include <iostream>
