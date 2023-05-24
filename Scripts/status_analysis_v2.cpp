@@ -2,7 +2,7 @@
 //production mechanism. This is layed out so it can be used for other particles as well by changing the IDs. The analysis
 //is done across the hole momentum ranges and it also produces 3D histograms if one wants to analyze pseudorapidity correlations
 //a s a function of the trigger p_T. Be aware it is a rather lengthy script but in principle it is able to produce a complete
-//analysis for every possible charm correlation.
+//analysis for every possible charm correlation. This script works from the output of the file Simulation/ccbarcorrelations_status_v2.cpp
 //C++ libraries
 #include <iostream>
 #include <vector>
