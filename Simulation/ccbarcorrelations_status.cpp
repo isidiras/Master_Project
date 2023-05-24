@@ -1,7 +1,9 @@
 //This script will provide trees with the pT phi eta PDG codes so they can be used to create more correlatiion plots. 
 //In principle every vector is an event and every element of the vector is a particle produced at that event.  It also 
 //creates a D+D+ correlation histogram so we can compare it with histogram created by the trees to check if everything works
-//alright. Finally it produces a multiplicity histogram and charm particles per event histogram.
+//alright. With this simulation script one can produce data to be analyzed by a script such the one I have posted at
+//Scripts/status_analysis_v2.cpp. Furthermore, multiplicity is stored at event level so the data provided can be studied 
+//as function of multiplicity as well.
 
 //C++ libraries we are using
 #include <iostream>
