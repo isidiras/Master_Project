@@ -1,7 +1,8 @@
 //With this script I am doing a specific analysis concerning the azimuthial correlation plots of D^{+-} mesons from 
 //production mechanism. This is layed out so it can be used for other particles as well by changing the IDs. The analysis
 //is done across the hole momentum ranges and it also produces 3D histograms if one wants to analyze pseudorapidity correlations
-//a s a function of the trigger p_T. 
+//a s a function of the trigger p_T. Be aware it is a rather lengthy script but in principle it is able to produce a complete
+//analysis for every possible charm correlation.
 //C++ libraries
 #include <iostream>
 #include <vector>
