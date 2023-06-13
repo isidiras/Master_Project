@@ -1,3 +1,6 @@
+#I use this small script to combine the results
+#from my batches.
+ 
  #!/bin/bash
 
  source /cvmfs/alice.cern.ch/etc/login.sh
