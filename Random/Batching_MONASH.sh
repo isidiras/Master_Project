@@ -1,7 +1,11 @@
+#I use this small script to split my data into batches in order
+#to make my analysis faster
+
 #!/bin/bash
 i=1
 k=0
-while [ $i -le 40 ]
+number_of_batches=40
+while [ $i -le $number_of_batches ]
 
 do
         mkdir MONASH_BATCH_STATUS$i
