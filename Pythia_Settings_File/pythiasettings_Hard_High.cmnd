@@ -1,0 +1,64 @@
+! File:CharmDeltaPhi.cpp
+! This file will be written from the script that gives the #Deltaphi depedance of charm quark production
+! Lines not beginning with a letter or digit are comments.
+! Author: Ioannis Sidiras
+
+! settings
+Main:numberOfEvents = 50000
+
+! std::cout settings
+!More information about these commands can be found on https://pythia.org/latest-manual/MainProgramSettings.html
+Init:showMultipartonInteractions = off
+Next:numberCount = 0 ! no progress is printed.
+! Next:numberShowEvent = 0
+
+! Setting up beams and tune
+! More information about tunes can be found here https://pythia.org//latest-manual/Welcome.html
+! More information about Beams parameters can be found here https://pythia.org/latest-manual/BeamParameters.html
+Beams:eCM = 14000				! sqrt(s) = 14 TeV (eCM counts as GeV)
+Beams:idA = 2212 				! beam 1 proton
+Beams:idB = 2212 				! beam 2 proton
+Tune:pp = 14 					! tune 14 = MONASH
+
+
+! Physics part
+
+! processes
+! For more information about processes one can visit https://pythia.org/latest-manual/Index.html and click on the section process selection because there are too many that one can
+! consider 
+! For the hard qcd processes one can visit https://pythia.org//latest-manual/QCDHardProcesses.html
+HardQCD:all = on
+PhaseSpace:pTHatMin = 10.
+ 
+
+! decay supression
+! More information about decay supression can be found here https://pythia.org/latest-manual/ParticleDecays.html
+!ParticleDecays:limitTau0 = on			! Particles with tau0 > tau0Max are not allowed to decay.
+!ParticleDecays:tau0Max = 0.01			! tau0Max is suppressing the weak decays so the produced charm particles will not decay.
+										! This tau0max is expressed in mm/c which is around 10E-12 seconds
+!We shut this off in order to anlyze production from deacy as well
+
+!charm decays off
+411:mayDecay = off				! D+
+421:mayDecay = off				! D0
+423:mayDecay = off				! D*(2007)0
+431:mayDecay = off				! Ds*+
+441:mayDecay = off				! etac
+443:mayDecay = off				! J/psi
+445:mayDecay = off				! chi
+4122:mayDecay = off				! Lamdac+
+4222:mayDecay = off				! Sigmac++
+4212:mayDecay = off				! Sigmac+
+4112:mayDecay = off				! Sigmac0
+4232:mayDecay = off				! Xic+
+4132:mayDecay = off				! Xic0
+4322:mayDecay = off				! Xic'+
+4312:mayDecay = off				! Xi'c0
+4414:mayDecay = off				! Xi+cc
+4424:mayDecay = off				! Xi++cc
+4444:mayDecay = off				! Omega++ccc
+4332:mayDecay = off				! Omega0c
+2224:mayDecay = off				! Delta++
+2214:mayDecay = off				! Delta0
+3214:mayDecay = off				! Sigma0*
+4224:mayDecay = off				! Sigma*++c
